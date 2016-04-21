@@ -7,14 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		77CA981C1CC67D9B001105BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA981B1CC67D9B001105BB /* main.m */; };
-		77CA981F1CC67D9B001105BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA981E1CC67D9B001105BB /* AppDelegate.m */; };
-		77CA98221CC67D9B001105BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98211CC67D9B001105BB /* ViewController.m */; };
-		77CA98251CC67D9B001105BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CA98231CC67D9B001105BB /* Main.storyboard */; };
+		778851CF1CC7B26600839856 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778851CE1CC7B26600839856 /* LocationViewController.m */; };
 		77CA98281CC67D9B001105BB /* WanbangTravel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98261CC67D9B001105BB /* WanbangTravel.xcdatamodeld */; };
 		77CA982A1CC67D9B001105BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CA98291CC67D9B001105BB /* Assets.xcassets */; };
 		77CA982D1CC67D9B001105BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CA982B1CC67D9B001105BB /* LaunchScreen.storyboard */; };
 		77CA98381CC67D9B001105BB /* WanbangTravelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98371CC67D9B001105BB /* WanbangTravelTests.m */; };
+		77CA98921CC67DC1001105BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98441CC67DC1001105BB /* AppDelegate.m */; };
+		77CA98931CC67DC1001105BB /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98471CC67DC1001105BB /* BaseTableViewController.m */; };
+		77CA98941CC67DC1001105BB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98491CC67DC1001105BB /* BaseViewController.m */; };
+		77CA98951CC67DC1001105BB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA984E1CC67DC1001105BB /* HomeViewController.m */; };
+		77CA98961CC67DC1001105BB /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98501CC67DC1001105BB /* SearchViewController.m */; };
+		77CA98971CC67DC1001105BB /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98521CC67DC1001105BB /* WebViewController.m */; };
+		77CA98981CC67DC1001105BB /* MySelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98551CC67DC1001105BB /* MySelfViewController.m */; };
+		77CA98991CC67DC1001105BB /* AdDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA985E1CC67DC1001105BB /* AdDataModel.m */; };
+		77CA989A1CC67DC1001105BB /* AdDataPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77CA985F1CC67DC1001105BB /* AdDataPlist.plist */; };
+		77CA989B1CC67DC1001105BB /* find_bar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 77CA98661CC67DC1001105BB /* find_bar.pdf */; };
+		77CA989C1CC67DC1001105BB /* home_bar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 77CA98671CC67DC1001105BB /* home_bar.pdf */; };
+		77CA989D1CC67DC1001105BB /* mySelf_bar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 77CA98681CC67DC1001105BB /* mySelf_bar.pdf */; };
+		77CA989E1CC67DC1001105BB /* nearby_bar.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 77CA98691CC67DC1001105BB /* nearby_bar.pdf */; };
+		77CA989F1CC67DC1001105BB /* 大巴租赁.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 77CA986A1CC67DC1001105BB /* 大巴租赁.pdf */; };
+		77CA98A01CC67DC1001105BB /* 户外探险.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 77CA986B1CC67DC1001105BB /* 户外探险.pdf */; };
+		77CA98A11CC67DC1001105BB /* 自由行.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 77CA986C1CC67DC1001105BB /* 自由行.pdf */; };
+		77CA98A21CC67DC1001105BB /* 跟团游.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 77CA986D1CC67DC1001105BB /* 跟团游.pdf */; };
+		77CA98A31CC67DC1001105BB /* 酒店客栈.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 77CA986E1CC67DC1001105BB /* 酒店客栈.pdf */; };
+		77CA98A41CC67DC1001105BB /* 门票.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 77CA986F1CC67DC1001105BB /* 门票.pdf */; };
+		77CA98A61CC67DC1001105BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98731CC67DC1001105BB /* main.m */; };
+		77CA98A71CC67DC1001105BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77CA98741CC67DC1001105BB /* Main.storyboard */; };
+		77CA98A91CC67DC1001105BB /* AlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98791CC67DC1001105BB /* AlertUtil.m */; };
+		77CA98AA1CC67DC1001105BB /* LocationUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA987B1CC67DC1001105BB /* LocationUtil.m */; };
+		77CA98AB1CC67DC1001105BB /* AdScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA987F1CC67DC1001105BB /* AdScrollView.m */; };
+		77CA98AC1CC67DC1001105BB /* ButtonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98811CC67DC1001105BB /* ButtonsView.m */; };
+		77CA98AD1CC67DC1001105BB /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98831CC67DC1001105BB /* CollectionView.m */; };
+		77CA98AE1CC67DC1001105BB /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98851CC67DC1001105BB /* HeaderView.m */; };
+		77CA98AF1CC67DC1001105BB /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98871CC67DC1001105BB /* HomeTableViewCell.m */; };
+		77CA98B01CC67DC1001105BB /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77CA98881CC67DC1001105BB /* HomeTableViewCell.xib */; };
+		77CA98B11CC67DC1001105BB /* PromotionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA988A1CC67DC1001105BB /* PromotionView.m */; };
+		77CA98B21CC67DC1001105BB /* ScrollTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA988C1CC67DC1001105BB /* ScrollTitleView.m */; };
+		77CA98B31CC67DC1001105BB /* SegementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA988E1CC67DC1001105BB /* SegementView.m */; };
+		77CA98B51CC67EC1001105BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CA98B41CC67EC1001105BB /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,20 +58,68 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		778851CD1CC7B26600839856 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		778851CE1CC7B26600839856 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		778851D01CC7B39100839856 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		77CA98171CC67D9B001105BB /* WanbangTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanbangTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		77CA981B1CC67D9B001105BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		77CA981D1CC67D9B001105BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		77CA981E1CC67D9B001105BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		77CA98201CC67D9B001105BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		77CA98211CC67D9B001105BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		77CA98241CC67D9B001105BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77CA98271CC67D9B001105BB /* WanbangTravel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WanbangTravel.xcdatamodel; sourceTree = "<group>"; };
 		77CA98291CC67D9B001105BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77CA982C1CC67D9B001105BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		77CA982E1CC67D9B001105BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77CA98331CC67D9B001105BB /* WanbangTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WanbangTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77CA98371CC67D9B001105BB /* WanbangTravelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WanbangTravelTests.m; sourceTree = "<group>"; };
 		77CA98391CC67D9B001105BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77CA98431CC67DC1001105BB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77CA98441CC67DC1001105BB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		77CA98461CC67DC1001105BB /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		77CA98471CC67DC1001105BB /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		77CA98481CC67DC1001105BB /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		77CA98491CC67DC1001105BB /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		77CA984D1CC67DC1001105BB /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		77CA984E1CC67DC1001105BB /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		77CA984F1CC67DC1001105BB /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		77CA98501CC67DC1001105BB /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		77CA98511CC67DC1001105BB /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		77CA98521CC67DC1001105BB /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		77CA98541CC67DC1001105BB /* MySelfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySelfViewController.h; sourceTree = "<group>"; };
+		77CA98551CC67DC1001105BB /* MySelfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySelfViewController.m; sourceTree = "<group>"; };
+		77CA985D1CC67DC1001105BB /* AdDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdDataModel.h; sourceTree = "<group>"; };
+		77CA985E1CC67DC1001105BB /* AdDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdDataModel.m; sourceTree = "<group>"; };
+		77CA985F1CC67DC1001105BB /* AdDataPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AdDataPlist.plist; sourceTree = "<group>"; };
+		77CA98661CC67DC1001105BB /* find_bar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = find_bar.pdf; sourceTree = "<group>"; };
+		77CA98671CC67DC1001105BB /* home_bar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = home_bar.pdf; sourceTree = "<group>"; };
+		77CA98681CC67DC1001105BB /* mySelf_bar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mySelf_bar.pdf; sourceTree = "<group>"; };
+		77CA98691CC67DC1001105BB /* nearby_bar.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = nearby_bar.pdf; sourceTree = "<group>"; };
+		77CA986A1CC67DC1001105BB /* 大巴租赁.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "大巴租赁.pdf"; sourceTree = "<group>"; };
+		77CA986B1CC67DC1001105BB /* 户外探险.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "户外探险.pdf"; sourceTree = "<group>"; };
+		77CA986C1CC67DC1001105BB /* 自由行.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "自由行.pdf"; sourceTree = "<group>"; };
+		77CA986D1CC67DC1001105BB /* 跟团游.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "跟团游.pdf"; sourceTree = "<group>"; };
+		77CA986E1CC67DC1001105BB /* 酒店客栈.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "酒店客栈.pdf"; sourceTree = "<group>"; };
+		77CA986F1CC67DC1001105BB /* 门票.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "门票.pdf"; sourceTree = "<group>"; };
+		77CA98721CC67DC1001105BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77CA98731CC67DC1001105BB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77CA98741CC67DC1001105BB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		77CA98781CC67DC1001105BB /* AlertUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertUtil.h; sourceTree = "<group>"; };
+		77CA98791CC67DC1001105BB /* AlertUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertUtil.m; sourceTree = "<group>"; };
+		77CA987A1CC67DC1001105BB /* LocationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUtil.h; sourceTree = "<group>"; };
+		77CA987B1CC67DC1001105BB /* LocationUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUtil.m; sourceTree = "<group>"; };
+		77CA987E1CC67DC1001105BB /* AdScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdScrollView.h; sourceTree = "<group>"; };
+		77CA987F1CC67DC1001105BB /* AdScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdScrollView.m; sourceTree = "<group>"; };
+		77CA98801CC67DC1001105BB /* ButtonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonsView.h; sourceTree = "<group>"; };
+		77CA98811CC67DC1001105BB /* ButtonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonsView.m; sourceTree = "<group>"; };
+		77CA98821CC67DC1001105BB /* CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
+		77CA98831CC67DC1001105BB /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
+		77CA98841CC67DC1001105BB /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		77CA98851CC67DC1001105BB /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		77CA98861CC67DC1001105BB /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		77CA98871CC67DC1001105BB /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		77CA98881CC67DC1001105BB /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		77CA98891CC67DC1001105BB /* PromotionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromotionView.h; sourceTree = "<group>"; };
+		77CA988A1CC67DC1001105BB /* PromotionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromotionView.m; sourceTree = "<group>"; };
+		77CA988B1CC67DC1001105BB /* ScrollTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollTitleView.h; sourceTree = "<group>"; };
+		77CA988C1CC67DC1001105BB /* ScrollTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollTitleView.m; sourceTree = "<group>"; };
+		77CA988D1CC67DC1001105BB /* SegementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegementView.h; sourceTree = "<group>"; };
+		77CA988E1CC67DC1001105BB /* SegementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegementView.m; sourceTree = "<group>"; };
+		77CA98B41CC67EC1001105BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CA98B51CC67EC1001105BB /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,26 +162,23 @@
 		77CA98191CC67D9B001105BB /* WanbangTravel */ = {
 			isa = PBXGroup;
 			children = (
-				77CA981D1CC67D9B001105BB /* AppDelegate.h */,
-				77CA981E1CC67D9B001105BB /* AppDelegate.m */,
-				77CA98201CC67D9B001105BB /* ViewController.h */,
-				77CA98211CC67D9B001105BB /* ViewController.m */,
-				77CA98231CC67D9B001105BB /* Main.storyboard */,
+				77CA98421CC67DC1001105BB /* Application */,
+				77CA98451CC67DC1001105BB /* Base */,
+				77CA984A1CC67DC1001105BB /* Categories */,
+				77CA984B1CC67DC1001105BB /* Controller */,
+				77CA98581CC67DC1001105BB /* Database */,
+				77CA98591CC67DC1001105BB /* Framework */,
+				77CA985A1CC67DC1001105BB /* Handler */,
+				77CA985B1CC67DC1001105BB /* Model */,
+				77CA98631CC67DC1001105BB /* Network */,
+				77CA98641CC67DC1001105BB /* Resources */,
+				77CA98701CC67DC1001105BB /* Storage */,
+				77CA98711CC67DC1001105BB /* Supporting Files */,
+				77CA98771CC67DC1001105BB /* Utils */,
+				77CA987C1CC67DC1001105BB /* View */,
 				77CA98291CC67D9B001105BB /* Assets.xcassets */,
-				77CA982B1CC67D9B001105BB /* LaunchScreen.storyboard */,
-				77CA982E1CC67D9B001105BB /* Info.plist */,
-				77CA98261CC67D9B001105BB /* WanbangTravel.xcdatamodeld */,
-				77CA981A1CC67D9B001105BB /* Supporting Files */,
 			);
 			path = WanbangTravel;
-			sourceTree = "<group>";
-		};
-		77CA981A1CC67D9B001105BB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				77CA981B1CC67D9B001105BB /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		77CA98361CC67D9B001105BB /* WanbangTravelTests */ = {
@@ -112,6 +188,264 @@
 				77CA98391CC67D9B001105BB /* Info.plist */,
 			);
 			path = WanbangTravelTests;
+			sourceTree = "<group>";
+		};
+		77CA98421CC67DC1001105BB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				77CA98431CC67DC1001105BB /* AppDelegate.h */,
+				77CA98441CC67DC1001105BB /* AppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		77CA98451CC67DC1001105BB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				77CA98461CC67DC1001105BB /* BaseTableViewController.h */,
+				77CA98471CC67DC1001105BB /* BaseTableViewController.m */,
+				77CA98481CC67DC1001105BB /* BaseViewController.h */,
+				77CA98491CC67DC1001105BB /* BaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		77CA984A1CC67DC1001105BB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		77CA984B1CC67DC1001105BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				77CA984C1CC67DC1001105BB /* Home */,
+				77CA98531CC67DC1001105BB /* Self */,
+				77CA98561CC67DC1001105BB /* Surround */,
+				77CA98571CC67DC1001105BB /* TravelNote */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		77CA984C1CC67DC1001105BB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				77CA984D1CC67DC1001105BB /* HomeViewController.h */,
+				77CA984E1CC67DC1001105BB /* HomeViewController.m */,
+				77CA984F1CC67DC1001105BB /* SearchViewController.h */,
+				77CA98501CC67DC1001105BB /* SearchViewController.m */,
+				77CA98511CC67DC1001105BB /* WebViewController.h */,
+				77CA98521CC67DC1001105BB /* WebViewController.m */,
+				778851CD1CC7B26600839856 /* LocationViewController.h */,
+				778851CE1CC7B26600839856 /* LocationViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		77CA98531CC67DC1001105BB /* Self */ = {
+			isa = PBXGroup;
+			children = (
+				77CA98541CC67DC1001105BB /* MySelfViewController.h */,
+				77CA98551CC67DC1001105BB /* MySelfViewController.m */,
+			);
+			path = Self;
+			sourceTree = "<group>";
+		};
+		77CA98561CC67DC1001105BB /* Surround */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Surround;
+			sourceTree = "<group>";
+		};
+		77CA98571CC67DC1001105BB /* TravelNote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TravelNote;
+			sourceTree = "<group>";
+		};
+		77CA98581CC67DC1001105BB /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		77CA98591CC67DC1001105BB /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				77CA98B41CC67EC1001105BB /* CoreLocation.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		77CA985A1CC67DC1001105BB /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		77CA985B1CC67DC1001105BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77CA985C1CC67DC1001105BB /* Home */,
+				77CA98601CC67DC1001105BB /* Self */,
+				77CA98611CC67DC1001105BB /* Surround */,
+				77CA98621CC67DC1001105BB /* TravelNote */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		77CA985C1CC67DC1001105BB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				77CA985D1CC67DC1001105BB /* AdDataModel.h */,
+				77CA985E1CC67DC1001105BB /* AdDataModel.m */,
+				77CA985F1CC67DC1001105BB /* AdDataPlist.plist */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		77CA98601CC67DC1001105BB /* Self */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Self;
+			sourceTree = "<group>";
+		};
+		77CA98611CC67DC1001105BB /* Surround */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Surround;
+			sourceTree = "<group>";
+		};
+		77CA98621CC67DC1001105BB /* TravelNote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TravelNote;
+			sourceTree = "<group>";
+		};
+		77CA98631CC67DC1001105BB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		77CA98641CC67DC1001105BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77CA98651CC67DC1001105BB /* icons */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		77CA98651CC67DC1001105BB /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				77CA98661CC67DC1001105BB /* find_bar.pdf */,
+				77CA98671CC67DC1001105BB /* home_bar.pdf */,
+				77CA98681CC67DC1001105BB /* mySelf_bar.pdf */,
+				77CA98691CC67DC1001105BB /* nearby_bar.pdf */,
+				77CA986A1CC67DC1001105BB /* 大巴租赁.pdf */,
+				77CA986B1CC67DC1001105BB /* 户外探险.pdf */,
+				77CA986C1CC67DC1001105BB /* 自由行.pdf */,
+				77CA986D1CC67DC1001105BB /* 跟团游.pdf */,
+				77CA986E1CC67DC1001105BB /* 酒店客栈.pdf */,
+				77CA986F1CC67DC1001105BB /* 门票.pdf */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		77CA98701CC67DC1001105BB /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		77CA98711CC67DC1001105BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77CA982B1CC67D9B001105BB /* LaunchScreen.storyboard */,
+				77CA98721CC67DC1001105BB /* Info.plist */,
+				77CA98731CC67DC1001105BB /* main.m */,
+				77CA98741CC67DC1001105BB /* Main.storyboard */,
+				77CA98261CC67D9B001105BB /* WanbangTravel.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77CA98771CC67DC1001105BB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				77CA98781CC67DC1001105BB /* AlertUtil.h */,
+				77CA98791CC67DC1001105BB /* AlertUtil.m */,
+				77CA987A1CC67DC1001105BB /* LocationUtil.h */,
+				77CA987B1CC67DC1001105BB /* LocationUtil.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		77CA987C1CC67DC1001105BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77CA987D1CC67DC1001105BB /* Home */,
+				77CA988F1CC67DC1001105BB /* Self */,
+				77CA98901CC67DC1001105BB /* Surround */,
+				77CA98911CC67DC1001105BB /* TravelNote */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77CA987D1CC67DC1001105BB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				77CA987E1CC67DC1001105BB /* AdScrollView.h */,
+				77CA987F1CC67DC1001105BB /* AdScrollView.m */,
+				77CA98801CC67DC1001105BB /* ButtonsView.h */,
+				77CA98811CC67DC1001105BB /* ButtonsView.m */,
+				77CA98821CC67DC1001105BB /* CollectionView.h */,
+				77CA98831CC67DC1001105BB /* CollectionView.m */,
+				77CA98841CC67DC1001105BB /* HeaderView.h */,
+				77CA98851CC67DC1001105BB /* HeaderView.m */,
+				77CA98861CC67DC1001105BB /* HomeTableViewCell.h */,
+				77CA98871CC67DC1001105BB /* HomeTableViewCell.m */,
+				77CA98881CC67DC1001105BB /* HomeTableViewCell.xib */,
+				77CA98891CC67DC1001105BB /* PromotionView.h */,
+				77CA988A1CC67DC1001105BB /* PromotionView.m */,
+				77CA988B1CC67DC1001105BB /* ScrollTitleView.h */,
+				77CA988C1CC67DC1001105BB /* ScrollTitleView.m */,
+				77CA988D1CC67DC1001105BB /* SegementView.h */,
+				77CA988E1CC67DC1001105BB /* SegementView.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		77CA988F1CC67DC1001105BB /* Self */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Self;
+			sourceTree = "<group>";
+		};
+		77CA98901CC67DC1001105BB /* Surround */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Surround;
+			sourceTree = "<group>";
+		};
+		77CA98911CC67DC1001105BB /* TravelNote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TravelNote;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +497,6 @@
 				TargetAttributes = {
 					77CA98161CC67D9B001105BB = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 2XT83L7AGX;
 					};
 					77CA98321CC67D9B001105BB = {
 						CreatedOnToolsVersion = 7.3;
@@ -196,9 +529,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CA98A41CC67DC1001105BB /* 门票.pdf in Resources */,
+				77CA989E1CC67DC1001105BB /* nearby_bar.pdf in Resources */,
+				77CA98B01CC67DC1001105BB /* HomeTableViewCell.xib in Resources */,
+				77CA98A21CC67DC1001105BB /* 跟团游.pdf in Resources */,
+				77CA98A01CC67DC1001105BB /* 户外探险.pdf in Resources */,
+				77CA989D1CC67DC1001105BB /* mySelf_bar.pdf in Resources */,
 				77CA982D1CC67D9B001105BB /* LaunchScreen.storyboard in Resources */,
+				77CA98A71CC67DC1001105BB /* Main.storyboard in Resources */,
+				77CA98A11CC67DC1001105BB /* 自由行.pdf in Resources */,
+				77CA989F1CC67DC1001105BB /* 大巴租赁.pdf in Resources */,
+				77CA989C1CC67DC1001105BB /* home_bar.pdf in Resources */,
+				77CA989B1CC67DC1001105BB /* find_bar.pdf in Resources */,
 				77CA982A1CC67D9B001105BB /* Assets.xcassets in Resources */,
-				77CA98251CC67D9B001105BB /* Main.storyboard in Resources */,
+				77CA989A1CC67DC1001105BB /* AdDataPlist.plist in Resources */,
+				77CA98A31CC67DC1001105BB /* 酒店客栈.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,10 +561,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77CA98221CC67D9B001105BB /* ViewController.m in Sources */,
-				77CA981F1CC67D9B001105BB /* AppDelegate.m in Sources */,
+				77CA98AF1CC67DC1001105BB /* HomeTableViewCell.m in Sources */,
 				77CA98281CC67D9B001105BB /* WanbangTravel.xcdatamodeld in Sources */,
-				77CA981C1CC67D9B001105BB /* main.m in Sources */,
+				77CA98AE1CC67DC1001105BB /* HeaderView.m in Sources */,
+				77CA98941CC67DC1001105BB /* BaseViewController.m in Sources */,
+				77CA98B31CC67DC1001105BB /* SegementView.m in Sources */,
+				77CA98AC1CC67DC1001105BB /* ButtonsView.m in Sources */,
+				77CA98981CC67DC1001105BB /* MySelfViewController.m in Sources */,
+				77CA98AD1CC67DC1001105BB /* CollectionView.m in Sources */,
+				77CA98B11CC67DC1001105BB /* PromotionView.m in Sources */,
+				77CA98971CC67DC1001105BB /* WebViewController.m in Sources */,
+				77CA98931CC67DC1001105BB /* BaseTableViewController.m in Sources */,
+				77CA98AB1CC67DC1001105BB /* AdScrollView.m in Sources */,
+				77CA98A91CC67DC1001105BB /* AlertUtil.m in Sources */,
+				77CA98991CC67DC1001105BB /* AdDataModel.m in Sources */,
+				77CA98921CC67DC1001105BB /* AppDelegate.m in Sources */,
+				77CA98B21CC67DC1001105BB /* ScrollTitleView.m in Sources */,
+				778851CF1CC7B26600839856 /* LocationViewController.m in Sources */,
+				77CA98AA1CC67DC1001105BB /* LocationUtil.m in Sources */,
+				77CA98951CC67DC1001105BB /* HomeViewController.m in Sources */,
+				77CA98A61CC67DC1001105BB /* main.m in Sources */,
+				77CA98961CC67DC1001105BB /* SearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,20 +604,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		77CA98231CC67D9B001105BB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77CA98241CC67D9B001105BB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		77CA982B1CC67D9B001105BB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				77CA982C1CC67D9B001105BB /* Base */,
+				778851D01CC7B39100839856 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -347,10 +703,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WanbangTravel/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/WanbangTravel/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mmt-sf.WanbangTravel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -358,10 +718,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WanbangTravel/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/WanbangTravel/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mmt-sf.WanbangTravel";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -408,6 +772,7 @@
 				77CA983E1CC67D9B001105BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77CA983F1CC67D9B001105BB /* Build configuration list for PBXNativeTarget "WanbangTravelTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +781,7 @@
 				77CA98411CC67D9B001105BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -426,7 +792,8 @@
 				77CA98271CC67D9B001105BB /* WanbangTravel.xcdatamodel */,
 			);
 			currentVersion = 77CA98271CC67D9B001105BB /* WanbangTravel.xcdatamodel */;
-			path = WanbangTravel.xcdatamodeld;
+			name = WanbangTravel.xcdatamodeld;
+			path = ../WanbangTravel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

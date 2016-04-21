@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  WanbangTravel
+//  wanbangtravel
 //
 //  Created by 沈凡 on 16/4/19.
 //  Copyright © 2016年 mmt&sf. All rights reserved.
@@ -51,7 +51,7 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 - (NSURL *)applicationDocumentsDirectory {
-    // The directory the application uses to store the Core Data store file. This code uses a directory named "com.mmt-sf.WanbangTravel" in the application's documents directory.
+    // The directory the application uses to store the Core Data store file. This code uses a directory named "com.mmt-sf.wanbangtravel" in the application's documents directory.
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
