@@ -17,11 +17,20 @@
 }
 
 @property (strong, nonatomic) IBOutlet UITableView *homeTableView;
-@property (strong, nonatomic) NSArray<UITableViewCell *> *homeTableViewCells;
+@property (strong, nonatomic)  NSArray<UITableViewCell *> *homeTableViewCells;
 
 @end
 
 @implementation HomeViewController
+
+- (instancetype)init{
+    if (self = [super init]) {
+        //self.tabBarItem.image = [[UIImage imageNamed:@"home_bar"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        self.tabBarItem.image = [UIImage imageNamed:@"home_bar"];
+
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,45 +46,37 @@
     leftBarBtn.backgroundColor = [UIColor redColor];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBarBtn];
     
-    //LocationUtil *util = [[LocationUtil alloc] init];
-    //[util locate];
-    //AlertUtil *alert = [[AlertUtil alloc] init];
-    //NSLog(@"%@",util.cityName);
-    //[alert showAlertViewWithTitle:@"tishi" andMsg:util.cityName];
-    
     mainScreen = [UIScreen mainScreen];
     
     UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 150, 30)];
+    searchBar.backgroundColor = [UIColor clearColor];
+    //去除搜索框的背景
+    for (UIView *subView in [[searchBar.subviews objectAtIndex:0] subviews]) {
+        if([subView isKindOfClass:NSClassFromString(@"UISearchBarBackground")]){
+            [subView removeFromSuperview];
+        }
+    }
     [searchBar setPlaceholder:@"请输入搜索内容"];
     searchBar.delegate = self;
     UIView *searchView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 150, 30)];
     [searchView addSubview:searchBar];
-    //[self.navigationController.navigationBar addSubview:searchBar];
     [self.navigationItem setTitleView:searchView];
     
     UIButton *telephoneBtn = [[UIButton alloc] initWithFrame:CGRectMake(150, 7, 50, 30)];
+    [telephoneBtn setTitle:@"电话" forState:UIControlStateNormal];
     [telephoneBtn setBackgroundColor:[UIColor greenColor]];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:telephoneBtn];
-
+    
     //创建顶部视图
     self.tableView.tableHeaderView = [HeaderView generateHeaderViewWithFrame:(self.view.frame)];
+    //self.hidesBottomBarWhenPushed = YES;
+    
 }
 
 - (void)chooseLocation{
     LocationViewController *vc = [[LocationViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-
- #pragma mark - Navigation
-
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-     UIViewController *destinationVc = [segue destinationViewController];
-     if ([destinationVc isKindOfClass:[WebViewController class]]) {
-         if ([destinationVc respondsToSelector:@selector(setUrl:)]) {
-             [destinationVc setValue:@"https://www.baidu.com" forKey:@"url"];
-         }
-     }
- }
 
 #pragma mark - Table view data source
 
@@ -97,7 +98,9 @@
 
 //选中跳转到WebView
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self performSegueWithIdentifier:@"webView" sender:self];
+    WebViewController *vc = [[WebViewController alloc] init];
+    [vc setUrl:@"http://www.baidu.com"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 //取消选中

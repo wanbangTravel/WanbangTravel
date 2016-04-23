@@ -1,29 +1,27 @@
 //
-//  SearchViewController.m
-//  WanBangTravel
+//  TravelNoteViewController.m
+//  WanbangTravel
 //
-//  Created by 沈凡 on 16/4/18.
+//  Created by 沈凡 on 16/4/22.
 //  Copyright © 2016年 mmt&sf. All rights reserved.
 //
 
-#import "SearchViewController.h"
+#import "TravelNoteViewController.h"
 
-@interface SearchViewController ()
+@interface TravelNoteViewController ()
 
 @end
 
-@implementation SearchViewController
-
-- (instancetype)init{
-    if (self = [super init]) {
-        [self setHidesBottomBarWhenPushed:YES];
-    }
-    return self;
-}
+@implementation TravelNoteViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 /*

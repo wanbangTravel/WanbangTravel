@@ -33,6 +33,8 @@
         int atomViewWidth = ATOMVIEW_WIDTH;
         self.columnsCount = col;
         self.rowsCount = row;
+//        self.layer.borderWidth = 1;
+//        self.layer.borderColor = (__bridge CGColorRef _Nullable)([UIColor grayColor]);
         _margin = (float)(width - (col * atomViewWidth)) / (col + 1);
         [self generateButtonItems];
     }

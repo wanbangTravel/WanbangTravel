@@ -14,6 +14,13 @@
 
 @implementation LocationViewController
 
+- (instancetype)init{
+    if (self = [super init]) {
+        [self setHidesBottomBarWhenPushed:YES];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }

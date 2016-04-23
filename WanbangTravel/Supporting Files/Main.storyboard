@@ -142,40 +142,11 @@
                     <navigationItem key="navigationItem" id="Ku0-xJ-62w"/>
                     <connections>
                         <outlet property="homeTableView" destination="x6j-lo-srI" id="01x-Wp-H1F"/>
-                        <segue destination="gem-6k-Hfj" kind="show" identifier="webView" id="RP6-Id-FPy"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ufr-cv-5Cp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2235" y="795"/>
-        </scene>
-        <!--Web View Controller-->
-        <scene sceneID="wvm-rv-lc8">
-            <objects>
-                <viewController id="gem-6k-Hfj" customClass="WebViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ESG-fD-m15"/>
-                        <viewControllerLayoutGuide type="bottom" id="j5U-ko-s94"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jPq-9X-cde">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qn8-rA-v6X">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ddh-Y6-mdy"/>
-                    <connections>
-                        <outlet property="webView" destination="qn8-rA-v6X" id="bXX-94-atr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XrK-Fv-G11" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2235" y="1599"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EpC-YU-xQE">

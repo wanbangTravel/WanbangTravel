@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7774B44F1CCA71C2001EC49A /* TravelNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B44E1CCA71C2001EC49A /* TravelNoteViewController.m */; };
+		7774B4551CCA721F001EC49A /* SurroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B4541CCA721F001EC49A /* SurroundViewController.m */; };
 		778851CF1CC7B26600839856 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778851CE1CC7B26600839856 /* LocationViewController.m */; };
 		77CA98281CC67D9B001105BB /* WanbangTravel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77CA98261CC67D9B001105BB /* WanbangTravel.xcdatamodeld */; };
 		77CA982A1CC67D9B001105BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77CA98291CC67D9B001105BB /* Assets.xcassets */; };
@@ -58,6 +60,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7774B44D1CCA71C2001EC49A /* TravelNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelNoteViewController.h; sourceTree = "<group>"; };
+		7774B44E1CCA71C2001EC49A /* TravelNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelNoteViewController.m; sourceTree = "<group>"; };
+		7774B4531CCA721F001EC49A /* SurroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurroundViewController.h; sourceTree = "<group>"; };
+		7774B4541CCA721F001EC49A /* SurroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurroundViewController.m; sourceTree = "<group>"; };
 		778851CD1CC7B26600839856 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		778851CE1CC7B26600839856 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		778851D01CC7B39100839856 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -255,6 +261,8 @@
 		77CA98561CC67DC1001105BB /* Surround */ = {
 			isa = PBXGroup;
 			children = (
+				7774B4531CCA721F001EC49A /* SurroundViewController.h */,
+				7774B4541CCA721F001EC49A /* SurroundViewController.m */,
 			);
 			path = Surround;
 			sourceTree = "<group>";
@@ -262,6 +270,8 @@
 		77CA98571CC67DC1001105BB /* TravelNote */ = {
 			isa = PBXGroup;
 			children = (
+				7774B44D1CCA71C2001EC49A /* TravelNoteViewController.h */,
+				7774B44E1CCA71C2001EC49A /* TravelNoteViewController.m */,
 			);
 			path = TravelNote;
 			sourceTree = "<group>";
@@ -561,6 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7774B4551CCA721F001EC49A /* SurroundViewController.m in Sources */,
 				77CA98AF1CC67DC1001105BB /* HomeTableViewCell.m in Sources */,
 				77CA98281CC67D9B001105BB /* WanbangTravel.xcdatamodeld in Sources */,
 				77CA98AE1CC67DC1001105BB /* HeaderView.m in Sources */,
@@ -571,6 +582,7 @@
 				77CA98AD1CC67DC1001105BB /* CollectionView.m in Sources */,
 				77CA98B11CC67DC1001105BB /* PromotionView.m in Sources */,
 				77CA98971CC67DC1001105BB /* WebViewController.m in Sources */,
+				7774B44F1CCA71C2001EC49A /* TravelNoteViewController.m in Sources */,
 				77CA98931CC67DC1001105BB /* BaseTableViewController.m in Sources */,
 				77CA98AB1CC67DC1001105BB /* AdScrollView.m in Sources */,
 				77CA98A91CC67DC1001105BB /* AlertUtil.m in Sources */,
