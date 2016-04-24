@@ -10,4 +10,6 @@
 
 @interface PromotionView : UIView
 
+//限时抢购
+
 @end

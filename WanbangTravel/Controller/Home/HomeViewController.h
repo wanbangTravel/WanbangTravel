@@ -12,6 +12,7 @@
 #import "WebViewController.h"
 #import "LocationViewController.h"
 #import "SearchViewController.h"
+#import "HomeTableViewCell.h"
 
 @interface HomeViewController : BaseTableViewController
 

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#define ATOMVIEW_WIDTH 50
+#define ATOMVIEW_HEIGHT 70
+#define HEIGHT_WIDTH_MARGINSCALE 0.1
+
 @interface ButtonsView : UIView
 
 @property (assign,nonatomic) int rowsCount;

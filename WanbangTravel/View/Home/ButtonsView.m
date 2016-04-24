@@ -11,9 +11,7 @@
 #define VIEW_WIDTH self.frame.size.width
 #define VIEW_HEIGHT self.frame.size.height
 
-#define ATOMVIEW_WIDTH 70
-#define ATOMVIEW_HEIGHT 90
-#define HEIGHT_WIDTH_MARGINSCALE 0.3
+
 
 //#define ROWS_COUNT (int)VIEW_HEIGHT / (int)ATOMVIEW_HEIGHT
 //#define COLUMNS_COUNT (int)VIEW_WIDTH / (int)ATOMVIEW_WIDTH

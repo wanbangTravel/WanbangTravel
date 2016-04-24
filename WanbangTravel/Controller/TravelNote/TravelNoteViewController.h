@@ -6,8 +6,9 @@
 //  Copyright © 2016年 mmt&sf. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BaseTableViewController.h"
+#import "NavigationSegment.h"
 
-@interface TravelNoteViewController : BaseViewController
+@interface TravelNoteViewController : BaseTableViewController
 
 @end

@@ -27,7 +27,7 @@
     if (self = [super init]) {
         //self.tabBarItem.image = [[UIImage imageNamed:@"home_bar"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         self.tabBarItem.image = [UIImage imageNamed:@"home_bar"];
-
+        
     }
     return self;
 }
@@ -41,10 +41,10 @@
     [leftBarBtn addTarget:self action:@selector(chooseLocation) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBarBtn];
     
-    UIButton *rightBarBtn = [[UIButton alloc] init];
-    leftBarBtn.frame = CGRectMake(150, 10, 50, 30);
-    leftBarBtn.backgroundColor = [UIColor redColor];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBarBtn];
+    UIButton *telephoneBtn = [[UIButton alloc] initWithFrame:CGRectMake(150, 7, 50, 30)];
+    [telephoneBtn setTitle:@"电话" forState:UIControlStateNormal];
+    [telephoneBtn setBackgroundColor:[UIColor greenColor]];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:telephoneBtn];
     
     mainScreen = [UIScreen mainScreen];
     
@@ -52,24 +52,21 @@
     searchBar.backgroundColor = [UIColor clearColor];
     //去除搜索框的背景
     for (UIView *subView in [[searchBar.subviews objectAtIndex:0] subviews]) {
-        if([subView isKindOfClass:NSClassFromString(@"UISearchBarBackground")]){
+        if ([subView isKindOfClass:NSClassFromString(@"UISearchBarBackground")]) {
             [subView removeFromSuperview];
         }
     }
     [searchBar setPlaceholder:@"请输入搜索内容"];
     searchBar.delegate = self;
     UIView *searchView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 150, 30)];
+    //searchView addGestureRecognizer:[UIGestureRecognizer al]
     [searchView addSubview:searchBar];
     [self.navigationItem setTitleView:searchView];
     
-    UIButton *telephoneBtn = [[UIButton alloc] initWithFrame:CGRectMake(150, 7, 50, 30)];
-    [telephoneBtn setTitle:@"电话" forState:UIControlStateNormal];
-    [telephoneBtn setBackgroundColor:[UIColor greenColor]];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:telephoneBtn];
+
     
     //创建顶部视图
-    self.tableView.tableHeaderView = [HeaderView generateHeaderViewWithFrame:(self.view.frame)];
-    //self.hidesBottomBarWhenPushed = YES;
+    self.tableView.tableHeaderView = [HeaderView generateHeaderView];
     
 }
 
@@ -89,8 +86,14 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
-    [cell setBackgroundColor:[UIColor purpleColor]];
+    
+    //1,创建可重用的自定义cell
+    HomeTableViewCell *cell = [HomeTableViewCell homeCellWithTableView:tableView];
+    //2,设置控件的值
+    //MicroBlogFrame *frame = self.microBlogFrames[indexPath.row];
+    //cell.microBlog = microBlog;
+    //cell.microBlogFrame = frame;
+    //3,返回
     return cell;
 }
 
@@ -110,7 +113,7 @@
 
 //单元格行高
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 80;
+    return 160;
 }
 
 #pragma mark - UISearch bar delegate methods

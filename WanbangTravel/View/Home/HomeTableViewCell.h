@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+#define TitleFontSize 14
+#define TextFontSize 10
+#define PriceFontSize 18
+
 @interface HomeTableViewCell : UITableViewCell
+
+//@property (nonatomic,strong) HomeTableViewCell *microBlog;
+//@property (nonatomic,strong) HomeTableViewCellFrame *microBlogFrame;
+
++ (instancetype)homeCellWithTableView:(UITableView *)tableView;
 
 @end

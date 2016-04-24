@@ -8,35 +8,64 @@
 
 #import "HeaderView.h"
 
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+
+@interface HeaderView () {
+    
+}
+
+@end
+
 @implementation HeaderView
 
+- (instancetype)init {
+    if(self = [super init]) {
+        self.frame = CGRectMake(0, 0,SCREEN_WIDTH, TOTAL_HEIGHT);
+        
+        AdScrollView *scrollView = [[AdScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, ADSCROLL_VIEW_HEIGHT)];
+        
+        AdDataModel *dataModel = [AdDataModel adDataModelWithImageNameAndAdTitleArray];
+        //如果滚动视图的父视图由导航控制器控制,必须要设置该属性(ps,猜测这是为了正常显示,导航控制器内部设置了UIEdgeInsetsMake(64, 0, 0, 0))
+        //scrollView.contentInset = UIEdgeInsetsMake(-64, 0, 0, 0);
+        [scrollView setImageNameArray:dataModel.imageNameArray];
+        [scrollView setAdTitleArray:dataModel.adTitleArray withShowStyle:AdTitleShowStyleLeft];
+        
+        scrollView.PageControlShowStyle = UIPageControlShowStyleCenter;
+        scrollView.pageControl.pageIndicatorTintColor = [UIColor whiteColor];
+        scrollView.pageControl.currentPageIndicatorTintColor = [UIColor orangeColor];
+        _adScrollView = scrollView;
+        [self addSubview:scrollView];
+        
+        ButtonsView *btnsView = [[ButtonsView alloc] initWithFrame:CGRectMake(0,CGRectGetMaxY(_adScrollView.frame) + MARGIN , SCREEN_WIDTH, BUTTONS_VIEW_HEIGHT) andRows:2 andColumns:4];
+        _buttonsView = btnsView;
+        [self addSubview:btnsView];
+        
+        ScrollTitleView *scrollTextView = [[ScrollTitleView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_buttonsView.frame) + MARGIN, SCREEN_WIDTH, SCROLLTITLE_VIEW_HEIGHT)];
+        _scrollTitleView = scrollTextView;
+        [self addSubview:scrollTextView];
+        
+        CollectionView *collectionsView = [[CollectionView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_scrollTitleView.frame) + MARGIN , SCREEN_WIDTH, COLLECTIONS_VIEW_HEIGHT)];
+        _collectionsView  = collectionsView;
+        [self addSubview:collectionsView];
+        
+        PromotionView *promotionView = [[PromotionView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_collectionsView.frame) + MARGIN , SCREEN_WIDTH, PROMOTIONS_VIEW_HEIGHT)];
+        _promotionView = promotionView;
+        [self addSubview:promotionView];
+        
+        SegementView *segmentView = [[SegementView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_promotionView.frame) + MARGIN, SCREEN_WIDTH, SEGMENT_VIEW_HEIGHT)];
+        _segmentView = segmentView;
+        [self addSubview:segmentView];
+        
+//        for (UIView *subView in self.subviews) {
+//            subView.layer.borderWidth = 1;
+//            subView.layer.borderColor = [[UIColor grayColor] CGColor];
+//        }
+    }
+    return self;
+}
 
-+ (UIView *)generateHeaderViewWithFrame:(CGRect)frame{
-    CGFloat width = frame.size.width;
-    
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, 700)];
-    
-    AdScrollView *scrollView = [[AdScrollView alloc] initWithFrame:CGRectMake(0, 0, width, 150)];
-    AdDataModel *dataModel = [AdDataModel adDataModelWithImageNameAndAdTitleArray];
-    //如果滚动视图的父视图由导航控制器控制,必须要设置该属性(ps,猜测这是为了正常显示,导航控制器内部设置了UIEdgeInsetsMake(64, 0, 0, 0))
-    //scrollView.contentInset = UIEdgeInsetsMake(-64, 0, 0, 0);
-    scrollView.imageNameArray = dataModel.imageNameArray;
-    [scrollView setAdTitleArray:dataModel.adTitleArray withShowStyle:AdTitleShowStyleLeft];
-    scrollView.PageControlShowStyle = UIPageControlShowStyleCenter;
-    scrollView.pageControl.pageIndicatorTintColor = [UIColor whiteColor];
-    scrollView.pageControl.currentPageIndicatorTintColor = [UIColor orangeColor];
-    [headerView addSubview:scrollView];
-    
-    ButtonsView *btnsView = [[ButtonsView alloc] initWithFrame:CGRectMake(0, 150, width, 200) andRows:2 andColumns:3];
-    [headerView addSubview:btnsView];
-    
-    ScrollTitleView *scrollTextView = [[ScrollTitleView alloc] initWithFrame:CGRectMake(0, 350, width, 100)];
-    [headerView addSubview:scrollTextView];
-    
-    CollectionView *collectionView = [[CollectionView alloc] initWithFrame:CGRectMake(0, 450, width, 200)];
-    [headerView addSubview:collectionView];
-    
-    return headerView;
++ (UIView *)generateHeaderView{
+    return [[self alloc] init];
 }
 
 @end
