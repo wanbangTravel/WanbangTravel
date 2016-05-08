@@ -14,7 +14,10 @@
 
 @interface ButtonsView : UIView
 
-@property (assign,nonatomic) int rowsCount;
-@property (assign,nonatomic) int columnsCount;
+@property (nonatomic, assign) int rowsCount;
+@property (nonatomic, assign) int columnsCount;
+@property (nonatomic, strong) NSArray<NSString *> *imgNameList;
+@property (nonatomic, strong) NSArray<UIColor *> *btnBackgroundColor;
+
 - (instancetype)initWithFrame:(CGRect)frame andRows:(int)row andColumns:(int)col;
 @end

@@ -14,7 +14,7 @@
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *contentLabel;
 @property (nonatomic, strong) UILabel *priceLabel;
-@property (nonatomic, assign ,getter=isShowPrice) BOOL *showPrice;
+//@property (nonatomic, assign ,getter=isShowPrice) BOOL *showPrice;
 
 @end
 
@@ -25,14 +25,6 @@
     
     // Configure the view for the selected state
 }
-
-//- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
-//    return nil;
-//}
-//
-//- (instancetype)initWithUITableView:(UITableView *)tableView forRowAtIndexPath:(NSIndexPath *)indexPath{
-//    return nil;
-//}
 
 //1,创建可重用的自定义cell对象
 + (instancetype)homeCellWithTableView:(UITableView *)tableView {
@@ -82,7 +74,7 @@
             [self.contentView addSubview:priceLabel];
             self.priceLabel = priceLabel;
         }
-        [self setSubViewFram];
+        [self setSubViewFrame];
     }
     return self;
 }
@@ -129,7 +121,7 @@
 
 
 //设置子控件显示的位置
-- (void)setSubViewFram {
+- (void)setSubViewFrame {
     //    self.iconView.frame = self.microBlogFrame.iconFrame;
     //    self.nameView.frame = self.microBlogFrame.nameFrame;
     //    self.vipView.frame = self.microBlogFrame.vipFrame;

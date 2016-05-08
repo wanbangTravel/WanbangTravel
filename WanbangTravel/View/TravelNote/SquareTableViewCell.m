@@ -8,6 +8,15 @@
 
 #import "SquareTableViewCell.h"
 
+@interface SquareTableViewCell ()
+
+@property (nonatomic, strong) UILabel *nameView;
+@property (nonatomic, strong) UILabel *textView;
+//图片
+@property (nonatomic, strong) UICollectionView *collectionView;
+
+@end
+
 @implementation SquareTableViewCell
 
 - (void)awakeFromNib {

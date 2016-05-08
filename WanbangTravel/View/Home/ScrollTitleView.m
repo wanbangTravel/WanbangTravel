@@ -12,22 +12,30 @@
 #define VIEW_HEIGHT self.frame.size.height
 #define VIEW_WIDTH self.frame.size.width
 
+@interface ScrollTitleView ()
+
+@property (nonatomic, strong) UIView *scrollTextView;
+
+@end
+
 @implementation ScrollTitleView
 
 /*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect {
+ // Drawing code
+ }
+ */
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         [self generateScrollTitleView];
     }
     return self;
 }
-- (void)generateScrollTitleView{
+
+- (void)generateScrollTitleView {
+    
     UIImageView *titleImageView = [[UIImageView alloc] init];
     CGFloat imgWidth = 100;
     CGFloat imgHeight = 30;
@@ -48,6 +56,29 @@
     [scrollLabel setTextColor:[UIColor redColor]];
     [scrollLabel setNumberOfLines:0];
     [scrollLabel setLineBreakMode:NSLineBreakByWordWrapping];
+    _scrollTextView = scrollLabel;
     [self addSubview:scrollLabel];
+    
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:4 target:self selector:@selector(makeTextScroll) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:@"mode"];
+}
+
+- (void)makeTextScroll {
+
+    [self.scrollTextView sizeToFit];
+    CGRect frame = self.scrollTextView.frame;
+    self.scrollTextView.frame = frame;
+    
+    [UIView beginAnimations:@"testAnimation" context:NULL];
+    [UIView setAnimationDuration:8.8f];
+    [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationRepeatAutoreverses:NO];
+    [UIView setAnimationRepeatCount:999999];
+    
+    frame = self.scrollTextView.frame;
+    frame.origin.y = -frame.size.height;
+    self.scrollTextView.frame = frame;
+    [UIView commitAnimations];
 }
 @end

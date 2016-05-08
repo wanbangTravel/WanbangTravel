@@ -11,28 +11,28 @@
 #define UISCREENHEIGHT  self.view.frame.size.height
 #define UISCREENWIDTH  self.view.frame.size.width
 
-@interface HomeViewController ()<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>{
+@interface HomeViewController () <UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate> {
     UIScreen *mainScreen;
     UIScrollView *_scrollView;
 }
 
 @property (strong, nonatomic) IBOutlet UITableView *homeTableView;
-@property (strong, nonatomic)  NSArray<UITableViewCell *> *homeTableViewCells;
+@property (strong, nonatomic)  NSArray<HomeTableViewCell *> *homeTableViewCells;
 
 @end
 
 @implementation HomeViewController
 
-- (instancetype)init{
+- (instancetype)init {
+    
     if (self = [super init]) {
-        //self.tabBarItem.image = [[UIImage imageNamed:@"home_bar"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        self.tabBarItem.image = [UIImage imageNamed:@"home_bar"];
-        
+//        self.tabBarItem.selectedImage = [[UIImage imageNamed:@"门票"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     }
     return self;
 }
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     UIButton *leftBarBtn = [[UIButton alloc] init];
     leftBarBtn.frame = CGRectMake(20, 5, 50, 20);
@@ -50,7 +50,7 @@
     
     UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 150, 30)];
     searchBar.backgroundColor = [UIColor clearColor];
-    //去除搜索框的背景
+    //去除搜索框的背景，不然会有灰色背景 (未在iOS其他版本中测试过 iOS9中可行)
     for (UIView *subView in [[searchBar.subviews objectAtIndex:0] subviews]) {
         if ([subView isKindOfClass:NSClassFromString(@"UISearchBarBackground")]) {
             [subView removeFromSuperview];
@@ -62,8 +62,6 @@
     //searchView addGestureRecognizer:[UIGestureRecognizer al]
     [searchView addSubview:searchBar];
     [self.navigationItem setTitleView:searchView];
-    
-
     
     //创建顶部视图
     self.tableView.tableHeaderView = [HeaderView generateHeaderView];

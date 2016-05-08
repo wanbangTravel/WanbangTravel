@@ -31,6 +31,8 @@
         int atomViewWidth = ATOMVIEW_WIDTH;
         self.columnsCount = col;
         self.rowsCount = row;
+        self.imgNameList = @[@"门票",@"自由行",@"大巴租赁",@"酒店客栈",@"户外探险",@"跟团游",@"户外探险",@"酒店客栈"];
+        self.btnBackgroundColor = @[[UIColor redColor],[UIColor blueColor],[UIColor greenColor],[UIColor grayColor],[UIColor orangeColor],[UIColor purpleColor],[UIColor redColor],[UIColor blueColor]];
 //        self.layer.borderWidth = 1;
 //        self.layer.borderColor = (__bridge CGColorRef _Nullable)([UIColor grayColor]);
         _margin = (float)(width - (col * atomViewWidth)) / (col + 1);
@@ -41,11 +43,13 @@
 
 //视图大小不变 变动间距的做法
 - (void)generateButtonItems{
+    int count  = 0;
     for (int i = 0; i < self.rowsCount; i++) {
         for (int j = 0; j< self.columnsCount; j++) {
             CGFloat x = (j + 1) * _margin + j * ATOMVIEW_WIDTH;
             CGFloat y = (i + 1) * _margin * HEIGHT_WIDTH_MARGINSCALE + i * ATOMVIEW_HEIGHT;
-            [self addSubview:[self createAtomViewWithFrame:CGRectMake(x, y, ATOMVIEW_WIDTH, ATOMVIEW_HEIGHT) andTitle:[NSString stringWithFormat:@"test"] andBackgroundColor:[UIColor blueColor]]];
+            [self addSubview:[self createAtomViewWithFrame:CGRectMake(x, y, ATOMVIEW_WIDTH, ATOMVIEW_HEIGHT) andTitle:self.imgNameList[count] andBackgroundColor:self.btnBackgroundColor[count] withBackgroudImgName:self.imgNameList[count]]];
+            count ++;
         }
     }
 }
@@ -55,12 +59,13 @@
 //
 //}
 
-- (UIView *)createAtomViewWithFrame:(CGRect)frame andTitle:(NSString *)title andBackgroundColor:(UIColor *)color{
+- (UIView *)createAtomViewWithFrame:(CGRect)frame andTitle:(NSString *)title andBackgroundColor:(UIColor *)color withBackgroudImgName:(NSString *)imgName {
     //创建原子视图来包括按钮和文字
     UIView *atomButtonView = [[UIView alloc] initWithFrame:frame];
     //创建按钮
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, ATOMVIEW_WIDTH, ATOMVIEW_WIDTH)];
     btn.layer.cornerRadius = ATOMVIEW_WIDTH / 2;
+    [btn setImage:[UIImage imageNamed:imgName] forState:UIControlStateNormal];
     [btn setBackgroundColor:color];
     [atomButtonView addSubview:btn];
     //文字
@@ -68,6 +73,7 @@
     [btnText setText:title];
     [btnText setTextAlignment:NSTextAlignmentCenter];
     [btnText setTextColor:[UIColor grayColor]];
+    [btnText setFont:[UIFont systemFontOfSize:12]];
     [atomButtonView addSubview:btnText];
     return atomButtonView;
 }

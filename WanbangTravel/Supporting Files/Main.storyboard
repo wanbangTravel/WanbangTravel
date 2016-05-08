@@ -9,7 +9,7 @@
         <scene sceneID="6yF-e6-p47">
             <objects>
                 <navigationController title="SurroundVC" id="v5s-Mg-d7X" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="p12-Nr-7CW"/>
+                    <tabBarItem key="tabBarItem" title="周边" image="nearby_bar" id="p12-Nr-7CW"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TR2-Xb-EHl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -26,7 +26,7 @@
         <scene sceneID="f5h-3O-TUe">
             <objects>
                 <navigationController title="TravelNoteVC" id="Orl-W3-csx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="wox-yh-Erv"/>
+                    <tabBarItem key="tabBarItem" title="发现" image="find_bar" id="wox-yh-Erv"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qD3-gZ-T4S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -101,7 +101,7 @@
         <scene sceneID="49M-xR-ACc">
             <objects>
                 <navigationController title="SelfVC" id="sbU-ep-tDO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="gz4-71-rOe"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="mySelf_bar" id="gz4-71-rOe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bPM-8W-rZA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -120,7 +120,7 @@
         <scene sceneID="8U3-va-XPb">
             <objects>
                 <navigationController title="HomeVC" id="yUw-vu-hTh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="gJW-5m-vz1"/>
+                    <tabBarItem key="tabBarItem" title="主页" image="home_bar" id="gJW-5m-vz1"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ki7-Oz-aOh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -177,4 +177,10 @@
             <point key="canvasLocation" x="-711" y="800"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="find_bar" width="30" height="30"/>
+        <image name="home_bar" width="30" height="30"/>
+        <image name="mySelf_bar" width="30" height="30"/>
+        <image name="nearby_bar" width="30" height="30"/>
+    </resources>
 </document>
