@@ -1,0 +1,30 @@
+//
+//  CommonMacroDefine.pch
+//  WanbangTravel
+//
+//  Created by 沈凡 on 16/5/10.
+//  Copyright © 2016年 mmt&sf. All rights reserved.
+//
+
+#ifndef CommonMacroDefinition_pch
+#define CommonMacroDefinition_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//手机屏幕的宽和高
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+//当前视图的实际边界宽和高
+#define VIEW_BOUNDS_WIDTH self.bounds.size.width
+#define VIEW_BOUNDS_HEIGHT self.bounds.size.height
+
+//当前视图在父视图中的宽和高
+#define VIEW_FRAME_WIDTH self.frame.size.width
+#define VIEW_FRAME_HEIGHT self.frame.size.height
+
+//通用间距
+#define COMMON_MARGIN 10
+
+#endif /* CommonMacroDefinition_pch */

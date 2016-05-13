@@ -1,29 +1,27 @@
 //
-//  SearchViewController.m
-//  WanBangTravel
+//  SquareViewController.m
+//  WanbangTravel
 //
-//  Created by 沈凡 on 16/4/18.
+//  Created by 沈凡 on 16/5/13.
 //  Copyright © 2016年 mmt&sf. All rights reserved.
 //
 
-#import "SearchViewController.h"
+#import "SquareViewController.h"
 
-@interface SearchViewController ()
+@interface SquareViewController ()
 
 @end
 
-@implementation SearchViewController
-
-- (instancetype)init {
-    if (self = [super init]) {
-        [self setHidesBottomBarWhenPushed:YES];
-    }
-    return self;
-}
+@implementation SquareViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 /*

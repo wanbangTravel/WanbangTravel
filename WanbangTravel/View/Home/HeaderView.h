@@ -14,6 +14,7 @@
 #import "CollectionView.h"
 #import "SegementView.h"
 #import "PromotionView.h"
+#import "CommonMacroDefinition.pch"
 
 #define ADSCROLL_VIEW_HEIGHT 150
 #define BUTTONS_VIEW_HEIGHT 160

@@ -51,6 +51,8 @@
 		77CA98B21CC67DC1001105BB /* ScrollTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA988C1CC67DC1001105BB /* ScrollTitleView.m */; };
 		77CA98B31CC67DC1001105BB /* SegementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CA988E1CC67DC1001105BB /* SegementView.m */; };
 		77CA98B51CC67EC1001105BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CA98B41CC67EC1001105BB /* CoreLocation.framework */; };
+		77E0CD151CE5C43500D76845 /* StrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E0CD141CE5C43500D76845 /* StrategyViewController.m */; };
+		77E0CD181CE5C44300D76845 /* SquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E0CD171CE5C44300D76845 /* SquareViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		771584641CE1E134001F7104 /* CommonMacroDefinition.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacroDefinition.pch; sourceTree = "<group>"; };
 		7774B44D1CCA71C2001EC49A /* TravelNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelNoteViewController.h; sourceTree = "<group>"; };
 		7774B44E1CCA71C2001EC49A /* TravelNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelNoteViewController.m; sourceTree = "<group>"; };
 		7774B4531CCA721F001EC49A /* SurroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurroundViewController.h; sourceTree = "<group>"; };
@@ -139,6 +142,10 @@
 		77CA988D1CC67DC1001105BB /* SegementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegementView.h; sourceTree = "<group>"; };
 		77CA988E1CC67DC1001105BB /* SegementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegementView.m; sourceTree = "<group>"; };
 		77CA98B41CC67EC1001105BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		77E0CD131CE5C43500D76845 /* StrategyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategyViewController.h; sourceTree = "<group>"; };
+		77E0CD141CE5C43500D76845 /* StrategyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrategyViewController.m; sourceTree = "<group>"; };
+		77E0CD161CE5C44300D76845 /* SquareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareViewController.h; sourceTree = "<group>"; };
+		77E0CD171CE5C44300D76845 /* SquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +232,7 @@
 				77CA98471CC67DC1001105BB /* BaseTableViewController.m */,
 				77CA98481CC67DC1001105BB /* BaseViewController.h */,
 				77CA98491CC67DC1001105BB /* BaseViewController.m */,
+				771584641CE1E134001F7104 /* CommonMacroDefinition.pch */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -285,6 +293,10 @@
 			children = (
 				7774B44D1CCA71C2001EC49A /* TravelNoteViewController.h */,
 				7774B44E1CCA71C2001EC49A /* TravelNoteViewController.m */,
+				77E0CD131CE5C43500D76845 /* StrategyViewController.h */,
+				77E0CD141CE5C43500D76845 /* StrategyViewController.m */,
+				77E0CD161CE5C44300D76845 /* SquareViewController.h */,
+				77E0CD171CE5C44300D76845 /* SquareViewController.m */,
 			);
 			path = TravelNote;
 			sourceTree = "<group>";
@@ -616,11 +628,13 @@
 				77CA98921CC67DC1001105BB /* AppDelegate.m in Sources */,
 				77C021151CCCC24800F0B2B5 /* NavigationSegment.m in Sources */,
 				77CA98B21CC67DC1001105BB /* ScrollTitleView.m in Sources */,
+				77E0CD151CE5C43500D76845 /* StrategyViewController.m in Sources */,
 				778851CF1CC7B26600839856 /* LocationViewController.m in Sources */,
 				77CA98AA1CC67DC1001105BB /* LocationUtil.m in Sources */,
 				77CA98951CC67DC1001105BB /* HomeViewController.m in Sources */,
 				77CA98A61CC67DC1001105BB /* main.m in Sources */,
 				77CA98961CC67DC1001105BB /* SearchViewController.m in Sources */,
+				77E0CD181CE5C44300D76845 /* SquareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

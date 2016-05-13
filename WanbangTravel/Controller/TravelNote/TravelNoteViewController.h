@@ -8,6 +8,8 @@
 
 #import "BaseTableViewController.h"
 #import "NavigationSegment.h"
+#import "StrategyViewController.h"
+#import "SquareViewController.h"
 
 @interface TravelNoteViewController : BaseTableViewController
 

@@ -6,10 +6,10 @@
 //  Copyright © 2016年 mmt&sf. All rights reserved.
 //
 
+
 #import "NavigationSegment.h"
 
-#define VIEW_WIDTH self.bounds.size.width
-#define VIEW_HEIGHT self.bounds.size.height
+
 
 @implementation NavigationSegment
 
@@ -23,7 +23,7 @@
 - (void)generateView {
     
     UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    leftBtn.frame  = CGRectMake((VIEW_WIDTH - 120) / 2, (VIEW_HEIGHT - 20) / 2, 60, 20);
+    leftBtn.frame  = CGRectMake((VIEW_BOUNDS_WIDTH - 120) / 2, (VIEW_BOUNDS_HEIGHT - 20) / 2, 60, 20);
     //[[UIButton alloc] initWithFrame:CGRectMake(0, 0,VIEW_WIDTH / 2, VIEW_HEIGHT)];
     leftBtn.titleLabel.textColor = [UIColor redColor];
     [leftBtn setTitle:@"攻略" forState:UIControlStateNormal];
@@ -31,7 +31,7 @@
     
     [self addSubview:leftBtn];
     
-    UIButton *rightBtn = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMaxX(leftBtn.frame), (VIEW_HEIGHT - 20) / 2, 60, 20)];
+    UIButton *rightBtn = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMaxX(leftBtn.frame), (VIEW_BOUNDS_HEIGHT - 20) / 2, 60, 20)];
     [rightBtn setTitle:@"广场" forState:UIControlStateNormal];
     rightBtn.titleLabel.textColor = [UIColor redColor];
     [rightBtn setBackgroundColor:[UIColor redColor]];

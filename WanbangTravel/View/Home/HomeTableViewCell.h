@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonMacroDefinition.pch"
 
 #define TitleFontSize 14
 #define TextFontSize 10

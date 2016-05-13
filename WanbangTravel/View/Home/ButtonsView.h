@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonMacroDefinition.pch"
 
 #define ATOMVIEW_WIDTH 50
 #define ATOMVIEW_HEIGHT 70

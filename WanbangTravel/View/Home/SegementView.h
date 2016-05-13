@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonMacroDefinition.pch"
 
 @interface SegementView : UIView
 

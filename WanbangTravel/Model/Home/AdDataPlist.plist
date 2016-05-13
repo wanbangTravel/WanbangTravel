@@ -3,16 +3,16 @@
 <plist version="1.0">
 <array>
 	<array>
-		<string>image3.jpg</string>
-		<string>image0.jpg</string>
-		<string>image1.png</string>
+		<string>image1.jpg</string>
 		<string>image2.jpg</string>
+		<string>image3.png</string>
+		<string>image4.jpg</string>
 	</array>
 	<array>
-		<string>魅力风景流水</string>
-		<string>远景小桥</string>
-		<string>近景小桥</string>
-		<string>夕阳无限好,只是进黄昏</string>
+		<string>测试图片1</string>
+		<string>测试图片2</string>
+		<string>测试图片3</string>
+		<string>测试图片4</string>
 	</array>
 </array>
 </plist>
